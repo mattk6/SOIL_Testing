@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Field Data</h1>
+    <div class="wrap">
+        <button type="submit">
+            <a href="/products" class="button">BACK</a>
+        </button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Field ID</th>
+                <th>Farmer Fname</th>
+                <th>Farmer Lname</th>
+                <th>Longitude</th>
+                <th>Latitude</th>
+                <th>Soil Type</th>
+                <th>Elevation</th>
+                <th>Avg Yield</th>
+                <th>Irrigation Status</th>
+                <th>Seed Provider</th>
+                <th>Salinity</th>
+                <th>Temperature</th>
+                <th>Moisture</th>
+                <th>Avg Annual Rainfall</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for field in fields %}
+            <tr>
+                <td>{{ field.Field_ID }}</td>
+                <td>{{ farmer.Fname }}</td>
+                <td>{{ farmer.Lname }}</td>
+                <td>{{ field.Longitude }}</td>
+                <td>{{ field.Latitude }}</td>
+                <td>{{ field.Soil_Type }}</td>
+                <td>{{ field.Elevation }}</td>
+                <td>{{ field.Avg_Yield }}</td>
+                <td>{{ field.Irrigation_Status }}</td>
+                <td>{{ field.Seed_Provider }}</td>
+                <td>{{ field.Salinity }}</td>
+                <td>{{ field.Temperature }}</td>
+                <td>{{ field.Moisture }}</td>
+                <td>{{ field.Avg_Annual_Rainfall }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

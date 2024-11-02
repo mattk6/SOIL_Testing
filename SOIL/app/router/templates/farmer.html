@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+ 
+    <h2>Farmers List</h2>
+    <div class="wrap">
+        <button type="submit">
+            <a href="/products" class="button">BACK</a>
+        </button>
+    </div>
+    <table id="farmersTable">
+        <thead>
+            <tr>
+                <th>Farmer ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zipcode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example rows, replace with dynamic content from your database -->
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>(555) 123-4567</td>
+                <td>john@example.com</td>
+                <td>123 Main St</td>
+                <td>Springfield</td>
+                <td>IL</td>
+                <td>62701</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>(555) 987-6543</td>
+                <td>jane@example.com</td>
+                <td>456 Oak St</td>
+                <td>Shelbyville</td>
+                <td>IL</td>
+                <td>62565</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
